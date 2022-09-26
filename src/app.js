@@ -1,6 +1,5 @@
 
 function formatDate(timestamp) {
- //calculate the date
  let date = new Date(timestamp);
  let hours = date.getHours();
   if (hours < 10) {
@@ -16,8 +15,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-console.log(response.data);
- 
 let currentCity = document.querySelector("#current-city");
 currentCity.innerHTML = response.data.name;
 
@@ -39,7 +36,7 @@ currentCondition.innerHTML = response.data.weather[0].description;
 }
 
 let apiKey = "690c1586235f5c036bd74a5466b0f1f4";
-let cityName = "New York"
+let cityName = "London"
 let apiUrl =
   `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
   
