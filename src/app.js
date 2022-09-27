@@ -33,10 +33,14 @@ currentCondition.innerHTML = response.data.weather[0].description;
  let date = document.querySelector("#date");
  date.innerHTML = formatDate(response.data.dt * 1000);
 
+ let weatherIcon = document.querySelector("#icon");
+ weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+ weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "690c1586235f5c036bd74a5466b0f1f4";
-let cityName = "London"
+let cityName = "New York"
 let apiUrl =
   `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
   
