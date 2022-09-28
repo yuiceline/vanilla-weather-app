@@ -5,11 +5,11 @@ body {
 
 
 .weather-app-wrapper {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 .weather-app {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
   margin-bottom: 0;
   padding: 40px;
@@ -29,6 +29,8 @@ h1 {
   
 }
 
+
+
 .overview {
     display: flex;
     align-items: center;
@@ -42,6 +44,10 @@ h1 {
 .overview-details {
     padding-top: 0;
    
+}
+
+.col-md-6 {
+    padding: 0;
 }
 
 .current-temp {
