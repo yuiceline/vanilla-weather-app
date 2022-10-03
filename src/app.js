@@ -80,20 +80,15 @@ fahrenheitLink.addEventListener("click", convertToF);
 
 let celciusTemperature = null;
 
-
 function convertToC(event) {
   event.preventDefault();
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   temperatureElement = document.querySelector("#current-temp");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
-
-
 }
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToC);
-
-
 
 search("New York");
